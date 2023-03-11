@@ -1,0 +1,188 @@
+===//htmt//===
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <title>Photo Gallery</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Photo Gallery</h1>
+    </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Gallery</a>
+      <a href="#">About</a>
+    </nav>
+    <img id="cover-photo" src="./3NIEQB3SFVCMNHH6MHZ42FO6PA.webp" alt="Cover Photo">
+    <section>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="./download (1).jpg" alt="Photo 1">
+        <div class="description">Kempegowda International Airport.</div>
+        <button class="like-button">Like</button>
+        <button class="dislike-button">Dislike</button>
+      </div>
+      </section>
+      <div class="gallery-item">
+        <img src="./download (2).jpg" alt="Photo 2">
+        <div class="description">Brigade Gateway,Orion .</div>
+        <button class="like-button">Like</button>
+        <button class="dislike-button">Dislike</button>
+      </div>
+        <div class="gallery-item">
+            <img src="./download.jpg" alt="Photo 2">
+            <div class="description">Vidhana Soudha.</div>
+            <button class="like-button">Like</button>
+            <button class="dislike-button">Dislike</button>
+        </div>
+        <div class="gallery-item">
+            <img src="./images (1).jpg" alt="Photo 2">
+            <div class="description">TownHall.</div>
+            <button class="like-button">Like</button>
+            <button class="dislike-button">Dislike</button>
+        </div>
+        <div class="gallery-item">
+            <img src="./images.jpg" alt="Photo 2">
+            <div class="description">Iskon Temple.</div>
+            <button class="like-button">Like</button>
+            <button class="dislike-button">Dislike</button>
+        </div>
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <h3>Get In Touch</h3>
+                  <p>Email or call us to set up a consult</p>
+                  <p>Email: Chiranjeeviraj@gmail.com</p>
+                    <p>Phone: +91 9663569829</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+          ===//css//===
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    margin: 0;
+  }
+  nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  #cover-photo {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  .gallery-item {
+    position: relative;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: calc();
+    display: block;
+  }
+  .gallery-item .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .description{
+    text-align: center;
+  }
+  .gallery-item .description {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .like-button{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #4d4b4b;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .dislike-button {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #4d4b4b;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .like-button:hover,
+  .dislike-button:hover {
+    text-align: center;
+    background-color: #555;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  footer h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 15px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+  }  }
+  
